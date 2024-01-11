@@ -1,0 +1,33 @@
+{
+  "username": "khiem@gmail.com",
+  "password": "1234567",
+  "mailServer": "127.0.0.1",
+  "SMTP": 2225,
+  "POP3": 3335,
+  "autoLoadTime": 10000,
+  "mailFolder": ["Inbox", "Important", "Work", "Project", "Spam"],
+  "maxSize": 3,
+  "rules": [
+    {
+      "type": "from",
+      "addresses": ["ahihi@testing.com", "ahuu@testing.com"],
+      "folder": "Project"
+    },
+    {
+      "type": "subject",
+      "keywords": ["urgent", "ASAP"],
+      "folder": "Important"
+    },
+    {
+      "type": "content",
+      "keywords": ["report", "meeting"],
+      "folder": "Work"
+    },
+    {
+      "type": "spam",
+      "keywords": ["virus", "hack", "crack"],
+      "folder": "Spam"
+    }
+  ],
+  "default_folder": "Inbox"
+}
